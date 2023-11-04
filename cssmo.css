@@ -1,0 +1,217 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+.main{
+   
+    position: absolute; 
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    overflow: hidden;
+}
+.main .a{
+    position: absolute;
+    left: -35%; 
+    top: -10%;
+    width: 300px;
+    height: 430px;
+    border-radius:  0vh 0vh 60% 60%;
+    background-image: linear-gradient(to top,rgb(116, 80, 245),hsl(276, 100%, 81%));
+    
+}
+.main .b{
+    position: absolute;
+    bottom: -10%;
+    right: -40%;  
+    width: 300px;
+    height: 430px;
+    border-radius:  50% 50% 0vh 0vh;
+    background-color: hsl(274, 70%, 96%);
+}
+.one{
+    border: 5px rgb(248, 248, 248) solid;
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    top: 10%;
+    left: 25%; 
+    width: 180px;
+    height: 330px;
+    /* background-color: rgb(73, 72, 71); */
+     z-index: 2; 
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+    overflow: hidden;
+
+}
+.one::after {
+    content: "";
+    position: absolute;
+    top: px;
+    left: 42px;
+    width: 90px;
+    height: 15px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+} 
+.one .nav{
+    position: relative;
+    color: white;
+    background-image: linear-gradient(to right,rgb(116, 80, 245),rgb(116, 80, 245),rgb(116, 80, 245),hsl(276, 100%, 81%));
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.one .nav::after{
+    content: "...";
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+    transform: rotate(90deg);
+
+}
+.one .nav::before{
+    content: "<";
+    position: absolute;
+    top:25px;
+    left: 6px;
+    /* right: 0px; */
+    /* font-size: 23px; */
+    width: fit-content;
+    height: fit-content;
+    /* transform: rotate(90deg); */
+
+}
+.one .nav img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+.one .nav div h3{
+    font-size: 13px;
+}
+.one .nav div p{
+    font-size: 9px;
+}
+.one .nav div {
+    margin-top:8px;
+}
+.sec{
+    background-color: rgb(246, 240, 255);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    row-gap: 2px;
+}
+.p1 ,.p2 ,.p5 {
+    background-color: rgb(243, 234, 252);
+    color: rgb(114, 53, 172);
+    font-size: 7px;
+    width: 70%;
+    border-radius: 15%;
+}
+.imgg{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.imgg img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15%;
+    margin-left: 2%;
+}
+.foru1, .foru2{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.p3 ,.p4{
+    background-color: rgb(255, 255, 255);
+    font-size: 7px;
+    width: 70%; 
+    border-radius: 15%;  
+}
+.ggg{
+    position: relative;
+    margin-top: -5px;
+    color: white;
+    width: 80%;
+    height: 16px;
+    display: grid;
+    grid-template-columns:20% 60% 20%;
+    background-image: linear-gradient(to right,hsl(276, 100%, 81%),rgb(116, 80, 245),rgb(116, 80, 245),rgb(116, 80, 245));
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+ .cercal {
+    margin-left: 8px;
+    margin-bottom: 2px;
+    width: 13px;
+    height: 70%;
+    border: 1px rgb(241, 234, 234) solid;
+    border-radius: 50%;
+} 
+.last{
+    padding: 4px;
+    font-size: 10px;
+    width: 80%;
+    height: 20px;
+    margin-left:10% ;
+    background-color: white;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.last .qq{
+    opacity: .7;
+}
+.e1{
+    color: white;
+    text-align: center;
+    background-color: rgb(19, 5, 56) ;
+    border:none;
+    width :80%;
+    height: 13px;
+
+}
+.tow{
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin-top: 110%;
+    left: 0px;
+    width: 80%;
+    margin-left: 10%;
+    height: 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    background-color:transparent;
+    z-index: 323;
+    /* font-family: 'Courier New', Courier, monospace; */
+
+}
+.tow p{
+    margin-top: 10px;
+    color: rgb(100, 98, 98);
+    font-size: 16.5px;
+}
